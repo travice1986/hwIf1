@@ -5,11 +5,9 @@ public class Main {
         Scanner console = new Scanner(System.in);
         System.out.print("Введите возраст ");
         int age = console.nextInt();
-        if (age >= 18){
-            System.out.println("он совершеннолетний");
-        } else {
-            System.out.println("он не достиг совершеннолетия");
-        }
+        if (age >= 18) System.out.println("он совершеннолетний");
+        else System.out.println("он не достиг совершеннолетия");
+
         //задача 2
         System.out.print("Введите температуру ");
         Scanner consoleTemp = new Scanner(System.in);
@@ -23,41 +21,33 @@ public class Main {
         System.out.print("Введите скорость ");
         Scanner consoleSpeed = new Scanner(System.in);
         int speed = consoleSpeed.nextInt();
-        if (speed >= 60){
+        if (speed >= 60)
             System.out.println("Если скорость " + speed + "км, то придется заплатить штраф");
-        } else {
-            System.out.println("Если скорость " + speed + "км, то можно ездить спокойно");
-        }
+        else System.out.println("Если скорость " + speed + "км, то можно ездить спокойно");
+
         // Задача 4
         System.out.print("Введите возраст ");
         Scanner consoleAge = new Scanner(System.in);
-        int Age = consoleAge.nextInt();
-        if (Age >= 2 && Age < 7){
-            System.out.println("Если возраст человека равен " + Age +" , то ему нужно ходить в детский сад");
-        } else {
-            if (Age >= 7 && Age < 18) {
-                System.out.println("Если возраст человека равен " + Age + " , то ему нужно ходить в школу");
-            } else {
-                if (Age >= 18 && Age < 25) {
-                    System.out.println("Если возраст человека равен " + Age + " , то его место в университете");
-                } else {
-                    System.out.println("Если возраст больше " + Age + " , то ему пора ходить на работу");
-                }
-            }
-        }
+        int age3 = consoleAge.nextInt();
+        if (age3 >= 2 && age3 < 7)
+            System.out.println("Если возраст человека равен " + age3 + " , то ему нужно ходить в детский сад");
+        else if (age3 >= 7 && age3 < 18)
+            System.out.println("Если возраст человека равен " + age3 + " , то ему нужно ходить в школу");
+        else if (age3 >= 18 && age3 < 25)
+            System.out.println("Если возраст человека равен " + age3 + " , то его место в университете");
+        else System.out.println("Если возраст больше " + age3 + " , то ему пора ходить на работу");
+
+
+
         // Задача 5
         System.out.print("Введите возраст ");
         Scanner consoleAge2 = new Scanner(System.in);
-        int Age2 = consoleAge2.nextInt();
-        if (Age2 < 5){
-            System.out.println("нельзя кататься на аттракционе");
-        } else {
-            if (Age2 >= 5 && Age2 < 14) {
-                System.out.println( "можно кататься на аттракционе в сопровождении взрослого");
-            } else {
-                System.out.println("можно кататься на аттракционе без сопровождения взрослого");
-            }
-        }
+        int age2;
+        age2 = consoleAge2.nextInt();
+        if (age2 < 5) System.out.println("нельзя кататься на аттракционе");
+        else if (age2 < 14) System.out.println( "можно кататься на аттракционе в сопровождении взрослого");
+        else System.out.println("можно кататься на аттракционе без сопровождения взрослого");
+
         // Задача 6
         int carriageCapacity = 102;
         int seatPlace = 60;
@@ -69,18 +59,14 @@ public class Main {
         int sPlace = carriageCapacity - place;
         int ssPlace = seatPlace - place;
 
-        if (place <= seatPlace){
+        if (place <= seatPlace)
             System.out.println("В вагоне " + ssPlace + " сидячих мест и "
                     + standingPlace + " стоячих");
-        } else {
-            if (place > seatPlace && place <= carriageCapacity){
+        else if (place <= carriageCapacity)
                 System.out.println("В вагоне нет сидячих мест, а количество стоячих мест равно " +
                         sPlace);
-            } else {
-                System.out.println("В вагоне нет мест");
-            }
+        else System.out.println("В вагоне нет мест");
 
-        }
         // Задача 7
         System.out.print("one = ");
         Scanner consoleOne = new Scanner(System.in);
@@ -92,15 +78,9 @@ public class Main {
         Scanner consoleThree = new Scanner(System.in);
         int three = consoleThree.nextInt();
 
-        if (one > two && one > three){
-            System.out.println("One самое большое число");
-        } else {
-            if (two > one && two > three){
-                System.out.println("Two самое большое число");
-            } else {
-                System.out.println("Three самое большое число");
-            }
-        }
+        if (one > two && one > three) System.out.println("One самое большое число");
+        else if (two > one && two > three) System.out.println("Two самое большое число");
+        else System.out.println("Three самое большое число");
 
     }
 }

@@ -8,6 +8,7 @@ public class Main {
         if (age >= 18) System.out.println("он совершеннолетний");
         else System.out.println("он не достиг совершеннолетия");
 
+
         //задача 2
         System.out.print("Введите температуру ");
         Scanner consoleTemp = new Scanner(System.in);
